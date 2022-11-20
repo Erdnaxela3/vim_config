@@ -1,0 +1,48 @@
+call plug#begin()
+
+Plug 'morhetz/gruvbox'
+
+call plug#end()
+
+set bg=dark
+colorscheme gruvbox
+
+" Basics
+filetype on " Enable file type detection
+syntax on " Enable syntax highlighting
+
+" Indentation
+set autoindent
+set tabstop=8 " Tab size
+set shiftwidth=4 " Indent size
+set softtabstop=4
+set expandtab " Use spaces instead of tabs
+
+" Search
+set incsearch " Highlight matches while typing search query
+" set hlsearch " Highlight previous search matches
+set ignorecase " Ignore case when searching
+set smartcase " Case sensitive search if the query contains upper case letters
+
+" Interface
+set number " Show line numbers
+" set relativenumber " Show line numbers relatively to cursor position
+set colorcolumn=80 " Highlight column 80
+" set nowrap " Disable line wrapping
+set showmode " Display keystrokes
+set showcmd " Show command while typing
+set laststatus=2 " Always show status bar
+set wildmenu " Better tab completion while typing commands
+set scrolloff=10 " Always keep 10 line visiblie above or under the cursor
+set splitbelow " Split below the current window
+set splitright " Split right of the current window
+
+" File
+set autoread " Re-read file when it has been changed outside of vim
+set autowrite " Automatically write file on some commands (like :make, :next...)
+set hidden " Keeps buffers hidden when closed
+
+" Miscellaneaous
+set mouse=a " Enable mouse support
+set list " Enable listchars
+set listchars=tab:»\ ,trail:·,eol:$ " Indicators for invisible characters
