@@ -1,27 +1,17 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+" Specify where plugins will be installed
+call plug#begin('~/.config/nvim/plugged')
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+Plug 'preservim/nerdtree'
+Plug 'morhetz/gruvbox'
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" End plugins section
+call plug#end()
 
-Plugin 'morhetz/gruvbox'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-
-set bg=dark
-colorscheme gruvbox
+let mapleader = "\<Space>" " Set your leader key
+colorscheme gruvbox " Set colorscheme
 
 " Basics
+filetype plugin indent on " Enable filetype detection and plugins
 filetype on " Enable file type detection
 syntax on " Enable syntax highlighting
 
