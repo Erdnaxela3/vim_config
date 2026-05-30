@@ -15,7 +15,7 @@ bash setup.sh
 3. Open vim
 ```bash
 # Ignore the error and press enter to continue
-vim
+nvim
 ```
 
 3. Run the following command in vim, to install the plugins (NERDTree, gruvbox theme, etc.)
