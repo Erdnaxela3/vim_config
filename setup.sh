@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo a
+sudo apt update
 sudo apt install neovim
 
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
