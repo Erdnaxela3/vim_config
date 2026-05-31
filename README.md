@@ -14,7 +14,7 @@ rm -f setup.sh vim_config
 git clone https://github.com/Erdnaxela3/vim_config.git
 ```
 
-3. Run the install script
+3. If you used the clone method, run the install script
 ```bash
 cd vim_config
 bash setup.sh
