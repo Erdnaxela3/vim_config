@@ -4,8 +4,9 @@
 1. Install without cloning the repo
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Erdnaxela3/vim_config/master/vim_config -o vim_config
-curl -fsSL https://raw.githubusercontent.com/Erdnaxela3/vim_config/master/setup.sh | bash
-rm -f vim_config
+curl -fsSL https://raw.githubusercontent.com/Erdnaxela3/vim_config/master/setup.sh -o setup.sh
+bash setup.sh
+rm -f setup.sh vim_config
 ```
 
 2. (Alternative) Clone this repo
