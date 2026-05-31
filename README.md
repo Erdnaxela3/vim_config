@@ -3,10 +3,12 @@
 
 1. Install without cloning the repo
 ```bash
-tmpdir="$(mktemp -d)" && \
-curl -fsSL https://raw.githubusercontent.com/Erdnaxela3/vim_config/master/setup.sh -o "$tmpdir/setup.sh" && \
-curl -fsSL https://raw.githubusercontent.com/Erdnaxela3/vim_config/master/vim_config -o "$tmpdir/vim_config" && \
-(cd "$tmpdir" && bash setup.sh)
+bash -c 'set -euo pipefail
+tmpdir="$(mktemp -d)"
+trap "rm -rf \"$tmpdir\"" EXIT
+curl -fsSL https://raw.githubusercontent.com/Erdnaxela3/vim_config/master/setup.sh -o "$tmpdir/setup.sh"
+curl -fsSL https://raw.githubusercontent.com/Erdnaxela3/vim_config/master/vim_config -o "$tmpdir/vim_config"
+(cd "$tmpdir" && bash setup.sh)'
 ```
 
 2. (Alternative) Clone this repo
